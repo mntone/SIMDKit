@@ -1,0 +1,1448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB1BB17B2214075B0020A41E /* SIMDKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1BB1712214075B0020A41E /* SIMDKit.framework */; };
+		EB1BB1822214075B0020A41E /* SIMDKit-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EB1BB1742214075B0020A41E /* SIMDKit-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB1BB18C221407770020A41E /* CGSize+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB18B221407770020A41E /* CGSize+Operators.swift */; };
+		EB1BB18E221407BB0020A41E /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB18D221407BB0020A41E /* CGPoint+Operators.swift */; };
+		EB1BB190221409F30020A41E /* CGPoint+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB18F221409F30020A41E /* CGPoint+Mutatings.swift */; };
+		EB1BB19222140A720020A41E /* CGPoint+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19122140A720020A41E /* CGPoint+Nonmutatings.swift */; };
+		EB1BB19422140E200020A41E /* CGSize+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19322140E200020A41E /* CGSize+Mutatings.swift */; };
+		EB1BB19622140E9A0020A41E /* CGSize+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19522140E9A0020A41E /* CGSize+Nonmutatings.swift */; };
+		EB1BB1982214396C0020A41E /* CGPoint+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1972214396C0020A41E /* CGPoint+Functions.swift */; };
+		EB1BB19A22143BE90020A41E /* CGSize+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19922143BE90020A41E /* CGSize+Functions.swift */; };
+		EB1BB1A0221452FB0020A41E /* CGPoint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19F221452FB0020A41E /* CGPoint+Utils.swift */; };
+		EB1BB1A2221453450020A41E /* CGSize+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1A1221453450020A41E /* CGSize+Utils.swift */; };
+		EB1BB1A622145DC30020A41E /* CGRect+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1A522145DC30020A41E /* CGRect+Operators.swift */; };
+		EB1BB1A822145F120020A41E /* CGRect+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1A722145F120020A41E /* CGRect+Functions.swift */; };
+		EB1BB1AA22145FA40020A41E /* CGRect+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1A922145FA40020A41E /* CGRect+Mutatings.swift */; };
+		EB1BB1AC221460D70020A41E /* CGRect+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1AB221460D70020A41E /* CGRect+Nonmutatings.swift */; };
+		EB1BB1AE221463410020A41E /* UIEdgeInsets+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1AD221463410020A41E /* UIEdgeInsets+Utils.swift */; };
+		EB1BB1B0221463AA0020A41E /* CGRect+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1AF221463AA0020A41E /* CGRect+Utils.swift */; };
+		EB1BB1B2221464120020A41E /* UIEdgeInsets+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1B1221464120020A41E /* UIEdgeInsets+Operators.swift */; };
+		EB1BB1B42214655A0020A41E /* UIEdgeInsets+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1B32214655A0020A41E /* UIEdgeInsets+Functions.swift */; };
+		EB1BB1B6221465F40020A41E /* UIEdgeInsets+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1B5221465F40020A41E /* UIEdgeInsets+Mutatings.swift */; };
+		EB1BB1B8221466AA0020A41E /* UIEdgeInsets+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1B7221466AA0020A41E /* UIEdgeInsets+Nonmutatings.swift */; };
+		EB1BB1BA22146D6D0020A41E /* NSDirectionalEdgeInsets+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1B922146D6D0020A41E /* NSDirectionalEdgeInsets+Operators.swift */; };
+		EB1BB1BC22146FE60020A41E /* NSDirectionalEdgeInsets+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1BB22146FE60020A41E /* NSDirectionalEdgeInsets+Mutatings.swift */; };
+		EB1BB1BE221470340020A41E /* NSDirectionalEdgeInsets+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1BD221470340020A41E /* NSDirectionalEdgeInsets+Nonmutatings.swift */; };
+		EB1BB1CE221472AA0020A41E /* SIMDKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1BB1C5221472A90020A41E /* SIMDKit.framework */; };
+		EB1BB1D3221472AA0020A41E /* CGRectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1D2221472AA0020A41E /* CGRectTests.swift */; };
+		EB1BB1DC221473AC0020A41E /* SIMDKit-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EB1BB1742214075B0020A41E /* SIMDKit-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB1BB1DD221473EB0020A41E /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB17F2214075B0020A41E /* CGPointTests.swift */; };
+		EB1BB1DE221473EB0020A41E /* CGSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19D221451F20020A41E /* CGSizeTests.swift */; };
+		EB1BB1DF221474000020A41E /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB17F2214075B0020A41E /* CGPointTests.swift */; };
+		EB1BB1E0221474000020A41E /* CGSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19D221451F20020A41E /* CGSizeTests.swift */; };
+		EB1BB1E12214740E0020A41E /* CGPoint+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1972214396C0020A41E /* CGPoint+Functions.swift */; };
+		EB1BB1E22214740E0020A41E /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB18D221407BB0020A41E /* CGPoint+Operators.swift */; };
+		EB1BB1E32214740E0020A41E /* CGPoint+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB18F221409F30020A41E /* CGPoint+Mutatings.swift */; };
+		EB1BB1E42214740E0020A41E /* CGPoint+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19122140A720020A41E /* CGPoint+Nonmutatings.swift */; };
+		EB1BB1E52214740E0020A41E /* CGPoint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19F221452FB0020A41E /* CGPoint+Utils.swift */; };
+		EB1BB1E62214740E0020A41E /* CGSize+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19922143BE90020A41E /* CGSize+Functions.swift */; };
+		EB1BB1E72214740E0020A41E /* CGSize+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB18B221407770020A41E /* CGSize+Operators.swift */; };
+		EB1BB1E82214740E0020A41E /* CGSize+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19322140E200020A41E /* CGSize+Mutatings.swift */; };
+		EB1BB1E92214740E0020A41E /* CGSize+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19522140E9A0020A41E /* CGSize+Nonmutatings.swift */; };
+		EB1BB1EA2214740E0020A41E /* CGSize+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1A1221453450020A41E /* CGSize+Utils.swift */; };
+		EB1BB1EB2214740E0020A41E /* CGRect+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1A722145F120020A41E /* CGRect+Functions.swift */; };
+		EB1BB1EC2214740E0020A41E /* CGRect+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1A522145DC30020A41E /* CGRect+Operators.swift */; };
+		EB1BB1ED2214740E0020A41E /* CGRect+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1A922145FA40020A41E /* CGRect+Mutatings.swift */; };
+		EB1BB1EE2214740E0020A41E /* CGRect+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1AB221460D70020A41E /* CGRect+Nonmutatings.swift */; };
+		EB1BB1EF2214740E0020A41E /* CGRect+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1AF221463AA0020A41E /* CGRect+Utils.swift */; };
+		EB1BB1F2221478A60020A41E /* SIMDKit-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EB1BB1F1221478980020A41E /* SIMDKit-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB1BB201221479120020A41E /* SIMDKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1BB1F8221479120020A41E /* SIMDKit.framework */; };
+		EB1BB208221479120020A41E /* SIMDKit-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EB1BB1FA221479120020A41E /* SIMDKit-tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB1BB20F221479410020A41E /* CGPoint+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1972214396C0020A41E /* CGPoint+Functions.swift */; };
+		EB1BB210221479410020A41E /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB18D221407BB0020A41E /* CGPoint+Operators.swift */; };
+		EB1BB211221479410020A41E /* CGPoint+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB18F221409F30020A41E /* CGPoint+Mutatings.swift */; };
+		EB1BB212221479410020A41E /* CGPoint+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19122140A720020A41E /* CGPoint+Nonmutatings.swift */; };
+		EB1BB213221479410020A41E /* CGPoint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19F221452FB0020A41E /* CGPoint+Utils.swift */; };
+		EB1BB214221479410020A41E /* CGSize+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19922143BE90020A41E /* CGSize+Functions.swift */; };
+		EB1BB215221479410020A41E /* CGSize+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB18B221407770020A41E /* CGSize+Operators.swift */; };
+		EB1BB216221479410020A41E /* CGSize+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19322140E200020A41E /* CGSize+Mutatings.swift */; };
+		EB1BB217221479410020A41E /* CGSize+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19522140E9A0020A41E /* CGSize+Nonmutatings.swift */; };
+		EB1BB218221479410020A41E /* CGSize+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1A1221453450020A41E /* CGSize+Utils.swift */; };
+		EB1BB219221479410020A41E /* CGRect+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1A722145F120020A41E /* CGRect+Functions.swift */; };
+		EB1BB21A221479410020A41E /* CGRect+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1A522145DC30020A41E /* CGRect+Operators.swift */; };
+		EB1BB21B221479410020A41E /* CGRect+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1A922145FA40020A41E /* CGRect+Mutatings.swift */; };
+		EB1BB21C221479410020A41E /* CGRect+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1AB221460D70020A41E /* CGRect+Nonmutatings.swift */; };
+		EB1BB21D221479410020A41E /* CGRect+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1AF221463AA0020A41E /* CGRect+Utils.swift */; };
+		EB1BB21E221479410020A41E /* NSDirectionalEdgeInsets+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1B922146D6D0020A41E /* NSDirectionalEdgeInsets+Operators.swift */; };
+		EB1BB21F221479410020A41E /* NSDirectionalEdgeInsets+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1BB22146FE60020A41E /* NSDirectionalEdgeInsets+Mutatings.swift */; };
+		EB1BB220221479410020A41E /* NSDirectionalEdgeInsets+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1BD221470340020A41E /* NSDirectionalEdgeInsets+Nonmutatings.swift */; };
+		EB1BB221221479410020A41E /* UIEdgeInsets+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1B32214655A0020A41E /* UIEdgeInsets+Functions.swift */; };
+		EB1BB222221479410020A41E /* UIEdgeInsets+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1B1221464120020A41E /* UIEdgeInsets+Operators.swift */; };
+		EB1BB223221479410020A41E /* UIEdgeInsets+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1B5221465F40020A41E /* UIEdgeInsets+Mutatings.swift */; };
+		EB1BB224221479410020A41E /* UIEdgeInsets+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1B7221466AA0020A41E /* UIEdgeInsets+Nonmutatings.swift */; };
+		EB1BB225221479410020A41E /* UIEdgeInsets+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1AD221463410020A41E /* UIEdgeInsets+Utils.swift */; };
+		EB1BB226221479460020A41E /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB17F2214075B0020A41E /* CGPointTests.swift */; };
+		EB1BB227221479460020A41E /* CGSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19D221451F20020A41E /* CGSizeTests.swift */; };
+		EB1BB22922147C530020A41E /* NSDirectionalEdgeInsets+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB22822147C530020A41E /* NSDirectionalEdgeInsets+Utils.swift */; };
+		EB1BB22B22147C530020A41E /* NSDirectionalEdgeInsets+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB22822147C530020A41E /* NSDirectionalEdgeInsets+Utils.swift */; };
+		EB1BB22D22147CF60020A41E /* NSDirectionalEdgeInsets+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB22C22147CF60020A41E /* NSDirectionalEdgeInsets+Functions.swift */; };
+		EB1BB22E22147CF60020A41E /* NSDirectionalEdgeInsets+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB22C22147CF60020A41E /* NSDirectionalEdgeInsets+Functions.swift */; };
+		EB1BB24E221481670020A41E /* CGPoint+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1972214396C0020A41E /* CGPoint+Functions.swift */; };
+		EB1BB24F221481670020A41E /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB18D221407BB0020A41E /* CGPoint+Operators.swift */; };
+		EB1BB250221481670020A41E /* CGPoint+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB18F221409F30020A41E /* CGPoint+Mutatings.swift */; };
+		EB1BB251221481670020A41E /* CGPoint+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19122140A720020A41E /* CGPoint+Nonmutatings.swift */; };
+		EB1BB252221481670020A41E /* CGPoint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19F221452FB0020A41E /* CGPoint+Utils.swift */; };
+		EB1BB253221481670020A41E /* CGSize+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19922143BE90020A41E /* CGSize+Functions.swift */; };
+		EB1BB254221481670020A41E /* CGSize+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB18B221407770020A41E /* CGSize+Operators.swift */; };
+		EB1BB255221481670020A41E /* CGSize+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19322140E200020A41E /* CGSize+Mutatings.swift */; };
+		EB1BB256221481670020A41E /* CGSize+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB19522140E9A0020A41E /* CGSize+Nonmutatings.swift */; };
+		EB1BB257221481670020A41E /* CGSize+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1A1221453450020A41E /* CGSize+Utils.swift */; };
+		EB1BB258221481670020A41E /* CGRect+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1A722145F120020A41E /* CGRect+Functions.swift */; };
+		EB1BB259221481670020A41E /* CGRect+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1A522145DC30020A41E /* CGRect+Operators.swift */; };
+		EB1BB25A221481670020A41E /* CGRect+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1A922145FA40020A41E /* CGRect+Mutatings.swift */; };
+		EB1BB25B221481670020A41E /* CGRect+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1AB221460D70020A41E /* CGRect+Nonmutatings.swift */; };
+		EB1BB25C221481670020A41E /* CGRect+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1AF221463AA0020A41E /* CGRect+Utils.swift */; };
+		EB1BB25D2214816D0020A41E /* UIEdgeInsets+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1B32214655A0020A41E /* UIEdgeInsets+Functions.swift */; };
+		EB1BB25E2214816D0020A41E /* UIEdgeInsets+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1B1221464120020A41E /* UIEdgeInsets+Operators.swift */; };
+		EB1BB25F2214816D0020A41E /* UIEdgeInsets+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1B5221465F40020A41E /* UIEdgeInsets+Mutatings.swift */; };
+		EB1BB2602214816D0020A41E /* UIEdgeInsets+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1B7221466AA0020A41E /* UIEdgeInsets+Nonmutatings.swift */; };
+		EB1BB2612214816D0020A41E /* UIEdgeInsets+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1AD221463410020A41E /* UIEdgeInsets+Utils.swift */; };
+		EB1BB2622214816D0020A41E /* NSDirectionalEdgeInsets+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB22C22147CF60020A41E /* NSDirectionalEdgeInsets+Functions.swift */; };
+		EB1BB2632214816D0020A41E /* NSDirectionalEdgeInsets+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1B922146D6D0020A41E /* NSDirectionalEdgeInsets+Operators.swift */; };
+		EB1BB2642214816D0020A41E /* NSDirectionalEdgeInsets+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1BB22146FE60020A41E /* NSDirectionalEdgeInsets+Mutatings.swift */; };
+		EB1BB2652214816D0020A41E /* NSDirectionalEdgeInsets+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB1BD221470340020A41E /* NSDirectionalEdgeInsets+Nonmutatings.swift */; };
+		EB1BB2662214816D0020A41E /* NSDirectionalEdgeInsets+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB22822147C530020A41E /* NSDirectionalEdgeInsets+Utils.swift */; };
+		EB1BB26C2215356E0020A41E /* CGVector+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2672215356D0020A41E /* CGVector+Mutatings.swift */; };
+		EB1BB26D2215356E0020A41E /* CGVector+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2672215356D0020A41E /* CGVector+Mutatings.swift */; };
+		EB1BB26E2215356E0020A41E /* CGVector+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2672215356D0020A41E /* CGVector+Mutatings.swift */; };
+		EB1BB26F2215356E0020A41E /* CGVector+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2672215356D0020A41E /* CGVector+Mutatings.swift */; };
+		EB1BB2702215356E0020A41E /* CGVector+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2682215356D0020A41E /* CGVector+Nonmutatings.swift */; };
+		EB1BB2712215356E0020A41E /* CGVector+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2682215356D0020A41E /* CGVector+Nonmutatings.swift */; };
+		EB1BB2722215356E0020A41E /* CGVector+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2682215356D0020A41E /* CGVector+Nonmutatings.swift */; };
+		EB1BB2732215356E0020A41E /* CGVector+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2682215356D0020A41E /* CGVector+Nonmutatings.swift */; };
+		EB1BB2742215356E0020A41E /* CGVector+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2692215356D0020A41E /* CGVector+Utils.swift */; };
+		EB1BB2752215356E0020A41E /* CGVector+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2692215356D0020A41E /* CGVector+Utils.swift */; };
+		EB1BB2762215356E0020A41E /* CGVector+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2692215356D0020A41E /* CGVector+Utils.swift */; };
+		EB1BB2772215356E0020A41E /* CGVector+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2692215356D0020A41E /* CGVector+Utils.swift */; };
+		EB1BB2782215356E0020A41E /* CGVector+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB26A2215356D0020A41E /* CGVector+Functions.swift */; };
+		EB1BB2792215356E0020A41E /* CGVector+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB26A2215356D0020A41E /* CGVector+Functions.swift */; };
+		EB1BB27A2215356E0020A41E /* CGVector+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB26A2215356D0020A41E /* CGVector+Functions.swift */; };
+		EB1BB27B2215356E0020A41E /* CGVector+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB26A2215356D0020A41E /* CGVector+Functions.swift */; };
+		EB1BB27C2215356E0020A41E /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB26B2215356D0020A41E /* CGVector+Operators.swift */; };
+		EB1BB27D2215356E0020A41E /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB26B2215356D0020A41E /* CGVector+Operators.swift */; };
+		EB1BB27E2215356E0020A41E /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB26B2215356D0020A41E /* CGVector+Operators.swift */; };
+		EB1BB27F2215356E0020A41E /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB26B2215356D0020A41E /* CGVector+Operators.swift */; };
+		EB1BB281221536D30020A41E /* CGVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB280221536D30020A41E /* CGVectorTests.swift */; };
+		EB1BB282221536D30020A41E /* CGVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB280221536D30020A41E /* CGVectorTests.swift */; };
+		EB1BB283221536D30020A41E /* CGVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB280221536D30020A41E /* CGVectorTests.swift */; };
+		EB1BB2852215424F0020A41E /* UIEdgeInsetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2842215424F0020A41E /* UIEdgeInsetsTests.swift */; };
+		EB1BB2872215424F0020A41E /* UIEdgeInsetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2842215424F0020A41E /* UIEdgeInsetsTests.swift */; };
+		EB1BB28E221543CD0020A41E /* UIEdgeInsets+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB28D221543CD0020A41E /* UIEdgeInsets+Definitions.swift */; };
+		EB1BB290221543CD0020A41E /* UIEdgeInsets+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB28D221543CD0020A41E /* UIEdgeInsets+Definitions.swift */; };
+		EB1BB291221543CD0020A41E /* UIEdgeInsets+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB28D221543CD0020A41E /* UIEdgeInsets+Definitions.swift */; };
+		EB1BB2932215461A0020A41E /* CGPoint+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2922215461A0020A41E /* CGPoint+Definitions.swift */; };
+		EB1BB2942215461A0020A41E /* CGPoint+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2922215461A0020A41E /* CGPoint+Definitions.swift */; };
+		EB1BB2952215461A0020A41E /* CGPoint+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2922215461A0020A41E /* CGPoint+Definitions.swift */; };
+		EB1BB2962215461A0020A41E /* CGPoint+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2922215461A0020A41E /* CGPoint+Definitions.swift */; };
+		EB1BB2982215466A0020A41E /* CGSize+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2972215466A0020A41E /* CGSize+Definitions.swift */; };
+		EB1BB2992215466A0020A41E /* CGSize+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2972215466A0020A41E /* CGSize+Definitions.swift */; };
+		EB1BB29A2215466A0020A41E /* CGSize+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2972215466A0020A41E /* CGSize+Definitions.swift */; };
+		EB1BB29B2215466A0020A41E /* CGSize+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2972215466A0020A41E /* CGSize+Definitions.swift */; };
+		EB1BB29D221546940020A41E /* CGVector+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB29C221546940020A41E /* CGVector+Definitions.swift */; };
+		EB1BB29E221546940020A41E /* CGVector+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB29C221546940020A41E /* CGVector+Definitions.swift */; };
+		EB1BB29F221546940020A41E /* CGVector+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB29C221546940020A41E /* CGVector+Definitions.swift */; };
+		EB1BB2A0221546940020A41E /* CGVector+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB29C221546940020A41E /* CGVector+Definitions.swift */; };
+		EB1BB2A2221546BA0020A41E /* CGRect+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2A1221546BA0020A41E /* CGRect+Definitions.swift */; };
+		EB1BB2A3221546BA0020A41E /* CGRect+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2A1221546BA0020A41E /* CGRect+Definitions.swift */; };
+		EB1BB2A4221546BA0020A41E /* CGRect+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2A1221546BA0020A41E /* CGRect+Definitions.swift */; };
+		EB1BB2A5221546BA0020A41E /* CGRect+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2A1221546BA0020A41E /* CGRect+Definitions.swift */; };
+		EB1BB2A7221546FB0020A41E /* NSDirectionalEdgeInsets+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2A6221546FB0020A41E /* NSDirectionalEdgeInsets+Definitions.swift */; };
+		EB1BB2A9221546FB0020A41E /* NSDirectionalEdgeInsets+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2A6221546FB0020A41E /* NSDirectionalEdgeInsets+Definitions.swift */; };
+		EB1BB2AA221546FB0020A41E /* NSDirectionalEdgeInsets+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2A6221546FB0020A41E /* NSDirectionalEdgeInsets+Definitions.swift */; };
+		EB1BB2B12215477F0020A41E /* NSEdgeInsets+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2AB2215477E0020A41E /* NSEdgeInsets+Utils.swift */; };
+		EB1BB2B22215477F0020A41E /* NSEdgeInsets+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2AC2215477E0020A41E /* NSEdgeInsets+Definitions.swift */; };
+		EB1BB2B32215477F0020A41E /* NSEdgeInsets+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2AD2215477E0020A41E /* NSEdgeInsets+Functions.swift */; };
+		EB1BB2B42215477F0020A41E /* NSEdgeInsets+Mutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2AE2215477E0020A41E /* NSEdgeInsets+Mutatings.swift */; };
+		EB1BB2B52215477F0020A41E /* NSEdgeInsets+Nonmutatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2AF2215477F0020A41E /* NSEdgeInsets+Nonmutatings.swift */; };
+		EB1BB2B62215477F0020A41E /* NSEdgeInsets+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2B02215477F0020A41E /* NSEdgeInsets+Operators.swift */; };
+		EB1BB2B8221547F20020A41E /* NSEdgeInsetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2B7221547F20020A41E /* NSEdgeInsetsTests.swift */; };
+		EB1BB2BA22154DC90020A41E /* NSDirectionalEdgeInsetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2B922154DC90020A41E /* NSDirectionalEdgeInsetsTests.swift */; };
+		EB1BB2BC22154DC90020A41E /* NSDirectionalEdgeInsetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB2B922154DC90020A41E /* NSDirectionalEdgeInsetsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB1BB17C2214075B0020A41E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1BB1682214075B0020A41E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1BB1702214075B0020A41E;
+			remoteInfo = UISimdKit;
+		};
+		EB1BB1CF221472AA0020A41E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1BB1682214075B0020A41E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1BB1C4221472A90020A41E;
+			remoteInfo = SIMDKit;
+		};
+		EB1BB202221479120020A41E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1BB1682214075B0020A41E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1BB1F7221479120020A41E;
+			remoteInfo = SIMDKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB1BB1712214075B0020A41E /* SIMDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SIMDKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1BB1742214075B0020A41E /* SIMDKit-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SIMDKit-iOS.h"; sourceTree = "<group>"; };
+		EB1BB1752214075B0020A41E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1BB17A2214075B0020A41E /* SIMDKitTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SIMDKitTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1BB17F2214075B0020A41E /* CGPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointTests.swift; sourceTree = "<group>"; };
+		EB1BB18B221407770020A41E /* CGSize+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Operators.swift"; sourceTree = "<group>"; };
+		EB1BB18D221407BB0020A41E /* CGPoint+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Operators.swift"; sourceTree = "<group>"; };
+		EB1BB18F221409F30020A41E /* CGPoint+Mutatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Mutatings.swift"; sourceTree = "<group>"; };
+		EB1BB19122140A720020A41E /* CGPoint+Nonmutatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Nonmutatings.swift"; sourceTree = "<group>"; };
+		EB1BB19322140E200020A41E /* CGSize+Mutatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Mutatings.swift"; sourceTree = "<group>"; };
+		EB1BB19522140E9A0020A41E /* CGSize+Nonmutatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Nonmutatings.swift"; sourceTree = "<group>"; };
+		EB1BB1972214396C0020A41E /* CGPoint+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Functions.swift"; sourceTree = "<group>"; };
+		EB1BB19922143BE90020A41E /* CGSize+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Functions.swift"; sourceTree = "<group>"; };
+		EB1BB19D221451F20020A41E /* CGSizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeTests.swift; sourceTree = "<group>"; };
+		EB1BB19F221452FB0020A41E /* CGPoint+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Utils.swift"; sourceTree = "<group>"; };
+		EB1BB1A1221453450020A41E /* CGSize+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Utils.swift"; sourceTree = "<group>"; };
+		EB1BB1A522145DC30020A41E /* CGRect+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Operators.swift"; sourceTree = "<group>"; };
+		EB1BB1A722145F120020A41E /* CGRect+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Functions.swift"; sourceTree = "<group>"; };
+		EB1BB1A922145FA40020A41E /* CGRect+Mutatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Mutatings.swift"; sourceTree = "<group>"; };
+		EB1BB1AB221460D70020A41E /* CGRect+Nonmutatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Nonmutatings.swift"; sourceTree = "<group>"; };
+		EB1BB1AD221463410020A41E /* UIEdgeInsets+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Utils.swift"; sourceTree = "<group>"; };
+		EB1BB1AF221463AA0020A41E /* CGRect+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Utils.swift"; sourceTree = "<group>"; };
+		EB1BB1B1221464120020A41E /* UIEdgeInsets+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Operators.swift"; sourceTree = "<group>"; };
+		EB1BB1B32214655A0020A41E /* UIEdgeInsets+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Functions.swift"; sourceTree = "<group>"; };
+		EB1BB1B5221465F40020A41E /* UIEdgeInsets+Mutatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Mutatings.swift"; sourceTree = "<group>"; };
+		EB1BB1B7221466AA0020A41E /* UIEdgeInsets+Nonmutatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Nonmutatings.swift"; sourceTree = "<group>"; };
+		EB1BB1B922146D6D0020A41E /* NSDirectionalEdgeInsets+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDirectionalEdgeInsets+Operators.swift"; sourceTree = "<group>"; };
+		EB1BB1BB22146FE60020A41E /* NSDirectionalEdgeInsets+Mutatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDirectionalEdgeInsets+Mutatings.swift"; sourceTree = "<group>"; };
+		EB1BB1BD221470340020A41E /* NSDirectionalEdgeInsets+Nonmutatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDirectionalEdgeInsets+Nonmutatings.swift"; sourceTree = "<group>"; };
+		EB1BB1C5221472A90020A41E /* SIMDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SIMDKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1BB1CD221472AA0020A41E /* SIMDKitTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SIMDKitTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1BB1D2221472AA0020A41E /* CGRectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectTests.swift; sourceTree = "<group>"; };
+		EB1BB1D4221472AA0020A41E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1BB1F1221478980020A41E /* SIMDKit-macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SIMDKit-macOS.h"; sourceTree = "<group>"; };
+		EB1BB1F8221479120020A41E /* SIMDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SIMDKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1BB1FA221479120020A41E /* SIMDKit-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SIMDKit-tvOS.h"; sourceTree = "<group>"; };
+		EB1BB200221479120020A41E /* SIMDKitTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SIMDKitTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1BB22822147C530020A41E /* NSDirectionalEdgeInsets+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDirectionalEdgeInsets+Utils.swift"; sourceTree = "<group>"; };
+		EB1BB22C22147CF60020A41E /* NSDirectionalEdgeInsets+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDirectionalEdgeInsets+Functions.swift"; sourceTree = "<group>"; };
+		EB1BB23B221481310020A41E /* SIMDKit-watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SIMDKit-watchOS.h"; sourceTree = "<group>"; };
+		EB1BB246221481470020A41E /* SIMDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SIMDKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1BB2672215356D0020A41E /* CGVector+Mutatings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Mutatings.swift"; sourceTree = "<group>"; };
+		EB1BB2682215356D0020A41E /* CGVector+Nonmutatings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Nonmutatings.swift"; sourceTree = "<group>"; };
+		EB1BB2692215356D0020A41E /* CGVector+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Utils.swift"; sourceTree = "<group>"; };
+		EB1BB26A2215356D0020A41E /* CGVector+Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Functions.swift"; sourceTree = "<group>"; };
+		EB1BB26B2215356D0020A41E /* CGVector+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Operators.swift"; sourceTree = "<group>"; };
+		EB1BB280221536D30020A41E /* CGVectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGVectorTests.swift; sourceTree = "<group>"; };
+		EB1BB2842215424F0020A41E /* UIEdgeInsetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsTests.swift; sourceTree = "<group>"; };
+		EB1BB28D221543CD0020A41E /* UIEdgeInsets+Definitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Definitions.swift"; sourceTree = "<group>"; };
+		EB1BB2922215461A0020A41E /* CGPoint+Definitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Definitions.swift"; sourceTree = "<group>"; };
+		EB1BB2972215466A0020A41E /* CGSize+Definitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Definitions.swift"; sourceTree = "<group>"; };
+		EB1BB29C221546940020A41E /* CGVector+Definitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGVector+Definitions.swift"; sourceTree = "<group>"; };
+		EB1BB2A1221546BA0020A41E /* CGRect+Definitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Definitions.swift"; sourceTree = "<group>"; };
+		EB1BB2A6221546FB0020A41E /* NSDirectionalEdgeInsets+Definitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDirectionalEdgeInsets+Definitions.swift"; sourceTree = "<group>"; };
+		EB1BB2AB2215477E0020A41E /* NSEdgeInsets+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSEdgeInsets+Utils.swift"; sourceTree = "<group>"; };
+		EB1BB2AC2215477E0020A41E /* NSEdgeInsets+Definitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSEdgeInsets+Definitions.swift"; sourceTree = "<group>"; };
+		EB1BB2AD2215477E0020A41E /* NSEdgeInsets+Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSEdgeInsets+Functions.swift"; sourceTree = "<group>"; };
+		EB1BB2AE2215477E0020A41E /* NSEdgeInsets+Mutatings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSEdgeInsets+Mutatings.swift"; sourceTree = "<group>"; };
+		EB1BB2AF2215477F0020A41E /* NSEdgeInsets+Nonmutatings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSEdgeInsets+Nonmutatings.swift"; sourceTree = "<group>"; };
+		EB1BB2B02215477F0020A41E /* NSEdgeInsets+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSEdgeInsets+Operators.swift"; sourceTree = "<group>"; };
+		EB1BB2B7221547F20020A41E /* NSEdgeInsetsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSEdgeInsetsTests.swift; sourceTree = "<group>"; };
+		EB1BB2B922154DC90020A41E /* NSDirectionalEdgeInsetsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDirectionalEdgeInsetsTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB1BB16E2214075B0020A41E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1772214075B0020A41E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BB17B2214075B0020A41E /* SIMDKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1C2221472A90020A41E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1CA221472AA0020A41E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BB1CE221472AA0020A41E /* SIMDKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1F5221479120020A41E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1FD221479120020A41E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BB201221479120020A41E /* SIMDKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB243221481470020A41E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB1BB1672214075B0020A41E = {
+			isa = PBXGroup;
+			children = (
+				EB1BB1732214075B0020A41E /* Sources */,
+				EB1BB1D1221472AA0020A41E /* Tests */,
+				EB1BB1722214075B0020A41E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB1BB1722214075B0020A41E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BB1712214075B0020A41E /* SIMDKit.framework */,
+				EB1BB17A2214075B0020A41E /* SIMDKitTests-iOS.xctest */,
+				EB1BB1C5221472A90020A41E /* SIMDKit.framework */,
+				EB1BB1CD221472AA0020A41E /* SIMDKitTests-macOS.xctest */,
+				EB1BB1F8221479120020A41E /* SIMDKit.framework */,
+				EB1BB200221479120020A41E /* SIMDKitTests-tvOS.xctest */,
+				EB1BB246221481470020A41E /* SIMDKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB1BB1732214075B0020A41E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BB1752214075B0020A41E /* Info.plist */,
+				EB1BB1742214075B0020A41E /* SIMDKit-iOS.h */,
+				EB1BB1F1221478980020A41E /* SIMDKit-macOS.h */,
+				EB1BB1FA221479120020A41E /* SIMDKit-tvOS.h */,
+				EB1BB23B221481310020A41E /* SIMDKit-watchOS.h */,
+				EB1BB2922215461A0020A41E /* CGPoint+Definitions.swift */,
+				EB1BB1972214396C0020A41E /* CGPoint+Functions.swift */,
+				EB1BB18F221409F30020A41E /* CGPoint+Mutatings.swift */,
+				EB1BB19122140A720020A41E /* CGPoint+Nonmutatings.swift */,
+				EB1BB18D221407BB0020A41E /* CGPoint+Operators.swift */,
+				EB1BB19F221452FB0020A41E /* CGPoint+Utils.swift */,
+				EB1BB2972215466A0020A41E /* CGSize+Definitions.swift */,
+				EB1BB19922143BE90020A41E /* CGSize+Functions.swift */,
+				EB1BB19322140E200020A41E /* CGSize+Mutatings.swift */,
+				EB1BB19522140E9A0020A41E /* CGSize+Nonmutatings.swift */,
+				EB1BB18B221407770020A41E /* CGSize+Operators.swift */,
+				EB1BB1A1221453450020A41E /* CGSize+Utils.swift */,
+				EB1BB29C221546940020A41E /* CGVector+Definitions.swift */,
+				EB1BB26A2215356D0020A41E /* CGVector+Functions.swift */,
+				EB1BB2672215356D0020A41E /* CGVector+Mutatings.swift */,
+				EB1BB2682215356D0020A41E /* CGVector+Nonmutatings.swift */,
+				EB1BB26B2215356D0020A41E /* CGVector+Operators.swift */,
+				EB1BB2692215356D0020A41E /* CGVector+Utils.swift */,
+				EB1BB2A1221546BA0020A41E /* CGRect+Definitions.swift */,
+				EB1BB1A722145F120020A41E /* CGRect+Functions.swift */,
+				EB1BB1A922145FA40020A41E /* CGRect+Mutatings.swift */,
+				EB1BB1AB221460D70020A41E /* CGRect+Nonmutatings.swift */,
+				EB1BB1A522145DC30020A41E /* CGRect+Operators.swift */,
+				EB1BB1AF221463AA0020A41E /* CGRect+Utils.swift */,
+				EB1BB2A6221546FB0020A41E /* NSDirectionalEdgeInsets+Definitions.swift */,
+				EB1BB22C22147CF60020A41E /* NSDirectionalEdgeInsets+Functions.swift */,
+				EB1BB1BB22146FE60020A41E /* NSDirectionalEdgeInsets+Mutatings.swift */,
+				EB1BB1BD221470340020A41E /* NSDirectionalEdgeInsets+Nonmutatings.swift */,
+				EB1BB1B922146D6D0020A41E /* NSDirectionalEdgeInsets+Operators.swift */,
+				EB1BB22822147C530020A41E /* NSDirectionalEdgeInsets+Utils.swift */,
+				EB1BB2AC2215477E0020A41E /* NSEdgeInsets+Definitions.swift */,
+				EB1BB2AD2215477E0020A41E /* NSEdgeInsets+Functions.swift */,
+				EB1BB2AE2215477E0020A41E /* NSEdgeInsets+Mutatings.swift */,
+				EB1BB2AF2215477F0020A41E /* NSEdgeInsets+Nonmutatings.swift */,
+				EB1BB2B02215477F0020A41E /* NSEdgeInsets+Operators.swift */,
+				EB1BB2AB2215477E0020A41E /* NSEdgeInsets+Utils.swift */,
+				EB1BB28D221543CD0020A41E /* UIEdgeInsets+Definitions.swift */,
+				EB1BB1B32214655A0020A41E /* UIEdgeInsets+Functions.swift */,
+				EB1BB1B5221465F40020A41E /* UIEdgeInsets+Mutatings.swift */,
+				EB1BB1B7221466AA0020A41E /* UIEdgeInsets+Nonmutatings.swift */,
+				EB1BB1B1221464120020A41E /* UIEdgeInsets+Operators.swift */,
+				EB1BB1AD221463410020A41E /* UIEdgeInsets+Utils.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EB1BB1D1221472AA0020A41E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BB1D4221472AA0020A41E /* Info.plist */,
+				EB1BB17F2214075B0020A41E /* CGPointTests.swift */,
+				EB1BB19D221451F20020A41E /* CGSizeTests.swift */,
+				EB1BB280221536D30020A41E /* CGVectorTests.swift */,
+				EB1BB1D2221472AA0020A41E /* CGRectTests.swift */,
+				EB1BB2B922154DC90020A41E /* NSDirectionalEdgeInsetsTests.swift */,
+				EB1BB2B7221547F20020A41E /* NSEdgeInsetsTests.swift */,
+				EB1BB2842215424F0020A41E /* UIEdgeInsetsTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EB1BB16C2214075B0020A41E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BB1822214075B0020A41E /* SIMDKit-iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1C0221472A90020A41E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BB1F2221478A60020A41E /* SIMDKit-macOS.h in Headers */,
+				EB1BB1DC221473AC0020A41E /* SIMDKit-iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1F3221479120020A41E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BB208221479120020A41E /* SIMDKit-tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB241221481470020A41E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EB1BB1702214075B0020A41E /* SIMDKit-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1BB1852214075B0020A41E /* Build configuration list for PBXNativeTarget "SIMDKit-iOS" */;
+			buildPhases = (
+				EB1BB16C2214075B0020A41E /* Headers */,
+				EB1BB16D2214075B0020A41E /* Sources */,
+				EB1BB16E2214075B0020A41E /* Frameworks */,
+				EB1BB16F2214075B0020A41E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SIMDKit-iOS";
+			productName = UISimdKit;
+			productReference = EB1BB1712214075B0020A41E /* SIMDKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB1BB1792214075B0020A41E /* SIMDKitTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1BB1882214075B0020A41E /* Build configuration list for PBXNativeTarget "SIMDKitTests-iOS" */;
+			buildPhases = (
+				EB1BB1762214075B0020A41E /* Sources */,
+				EB1BB1772214075B0020A41E /* Frameworks */,
+				EB1BB1782214075B0020A41E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1BB17D2214075B0020A41E /* PBXTargetDependency */,
+			);
+			name = "SIMDKitTests-iOS";
+			productName = UISimdKitTests;
+			productReference = EB1BB17A2214075B0020A41E /* SIMDKitTests-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB1BB1C4221472A90020A41E /* SIMDKit-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1BB1DA221472AA0020A41E /* Build configuration list for PBXNativeTarget "SIMDKit-macOS" */;
+			buildPhases = (
+				EB1BB1C0221472A90020A41E /* Headers */,
+				EB1BB1C1221472A90020A41E /* Sources */,
+				EB1BB1C2221472A90020A41E /* Frameworks */,
+				EB1BB1C3221472A90020A41E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SIMDKit-macOS";
+			productName = SIMDKit;
+			productReference = EB1BB1C5221472A90020A41E /* SIMDKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB1BB1CC221472AA0020A41E /* SIMDKitTests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1BB1DB221472AA0020A41E /* Build configuration list for PBXNativeTarget "SIMDKitTests-macOS" */;
+			buildPhases = (
+				EB1BB1C9221472AA0020A41E /* Sources */,
+				EB1BB1CA221472AA0020A41E /* Frameworks */,
+				EB1BB1CB221472AA0020A41E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1BB1D0221472AA0020A41E /* PBXTargetDependency */,
+			);
+			name = "SIMDKitTests-macOS";
+			productName = SIMDKitTests;
+			productReference = EB1BB1CD221472AA0020A41E /* SIMDKitTests-macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB1BB1F7221479120020A41E /* SIMDKit-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1BB209221479120020A41E /* Build configuration list for PBXNativeTarget "SIMDKit-tvOS" */;
+			buildPhases = (
+				EB1BB1F3221479120020A41E /* Headers */,
+				EB1BB1F4221479120020A41E /* Sources */,
+				EB1BB1F5221479120020A41E /* Frameworks */,
+				EB1BB1F6221479120020A41E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SIMDKit-tvOS";
+			productName = SIMDKit;
+			productReference = EB1BB1F8221479120020A41E /* SIMDKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB1BB1FF221479120020A41E /* SIMDKitTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1BB20C221479120020A41E /* Build configuration list for PBXNativeTarget "SIMDKitTests-tvOS" */;
+			buildPhases = (
+				EB1BB1FC221479120020A41E /* Sources */,
+				EB1BB1FD221479120020A41E /* Frameworks */,
+				EB1BB1FE221479120020A41E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1BB203221479120020A41E /* PBXTargetDependency */,
+			);
+			name = "SIMDKitTests-tvOS";
+			productName = SIMDKitTests;
+			productReference = EB1BB200221479120020A41E /* SIMDKitTests-tvOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB1BB245221481470020A41E /* SIMDKit-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1BB24B221481470020A41E /* Build configuration list for PBXNativeTarget "SIMDKit-watchOS" */;
+			buildPhases = (
+				EB1BB241221481470020A41E /* Headers */,
+				EB1BB242221481470020A41E /* Sources */,
+				EB1BB243221481470020A41E /* Frameworks */,
+				EB1BB244221481470020A41E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SIMDKit-watchOS";
+			productName = SIMDKit;
+			productReference = EB1BB246221481470020A41E /* SIMDKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB1BB1682214075B0020A41E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = mntone;
+				TargetAttributes = {
+					EB1BB1702214075B0020A41E = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					EB1BB1792214075B0020A41E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EB1BB1C4221472A90020A41E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EB1BB1CC221472AA0020A41E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EB1BB1F7221479120020A41E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EB1BB1FF221479120020A41E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EB1BB245221481470020A41E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = EB1BB16B2214075B0020A41E /* Build configuration list for PBXProject "SIMDKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EB1BB1672214075B0020A41E;
+			productRefGroup = EB1BB1722214075B0020A41E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB1BB1702214075B0020A41E /* SIMDKit-iOS */,
+				EB1BB1792214075B0020A41E /* SIMDKitTests-iOS */,
+				EB1BB1C4221472A90020A41E /* SIMDKit-macOS */,
+				EB1BB1CC221472AA0020A41E /* SIMDKitTests-macOS */,
+				EB1BB1F7221479120020A41E /* SIMDKit-tvOS */,
+				EB1BB1FF221479120020A41E /* SIMDKitTests-tvOS */,
+				EB1BB245221481470020A41E /* SIMDKit-watchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB1BB16F2214075B0020A41E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1782214075B0020A41E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1C3221472A90020A41E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1CB221472AA0020A41E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1F6221479120020A41E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1FE221479120020A41E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB244221481470020A41E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB1BB16D2214075B0020A41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BB2A2221546BA0020A41E /* CGRect+Definitions.swift in Sources */,
+				EB1BB18E221407BB0020A41E /* CGPoint+Operators.swift in Sources */,
+				EB1BB1A822145F120020A41E /* CGRect+Functions.swift in Sources */,
+				EB1BB190221409F30020A41E /* CGPoint+Mutatings.swift in Sources */,
+				EB1BB26C2215356E0020A41E /* CGVector+Mutatings.swift in Sources */,
+				EB1BB1BC22146FE60020A41E /* NSDirectionalEdgeInsets+Mutatings.swift in Sources */,
+				EB1BB22922147C530020A41E /* NSDirectionalEdgeInsets+Utils.swift in Sources */,
+				EB1BB19A22143BE90020A41E /* CGSize+Functions.swift in Sources */,
+				EB1BB1A622145DC30020A41E /* CGRect+Operators.swift in Sources */,
+				EB1BB1B0221463AA0020A41E /* CGRect+Utils.swift in Sources */,
+				EB1BB1B2221464120020A41E /* UIEdgeInsets+Operators.swift in Sources */,
+				EB1BB27C2215356E0020A41E /* CGVector+Operators.swift in Sources */,
+				EB1BB1B8221466AA0020A41E /* UIEdgeInsets+Nonmutatings.swift in Sources */,
+				EB1BB2982215466A0020A41E /* CGSize+Definitions.swift in Sources */,
+				EB1BB18C221407770020A41E /* CGSize+Operators.swift in Sources */,
+				EB1BB1AA22145FA40020A41E /* CGRect+Mutatings.swift in Sources */,
+				EB1BB1BE221470340020A41E /* NSDirectionalEdgeInsets+Nonmutatings.swift in Sources */,
+				EB1BB2932215461A0020A41E /* CGPoint+Definitions.swift in Sources */,
+				EB1BB1982214396C0020A41E /* CGPoint+Functions.swift in Sources */,
+				EB1BB1AE221463410020A41E /* UIEdgeInsets+Utils.swift in Sources */,
+				EB1BB1AC221460D70020A41E /* CGRect+Nonmutatings.swift in Sources */,
+				EB1BB19422140E200020A41E /* CGSize+Mutatings.swift in Sources */,
+				EB1BB2782215356E0020A41E /* CGVector+Functions.swift in Sources */,
+				EB1BB1BA22146D6D0020A41E /* NSDirectionalEdgeInsets+Operators.swift in Sources */,
+				EB1BB1B42214655A0020A41E /* UIEdgeInsets+Functions.swift in Sources */,
+				EB1BB2742215356E0020A41E /* CGVector+Utils.swift in Sources */,
+				EB1BB1A0221452FB0020A41E /* CGPoint+Utils.swift in Sources */,
+				EB1BB2702215356E0020A41E /* CGVector+Nonmutatings.swift in Sources */,
+				EB1BB28E221543CD0020A41E /* UIEdgeInsets+Definitions.swift in Sources */,
+				EB1BB19222140A720020A41E /* CGPoint+Nonmutatings.swift in Sources */,
+				EB1BB29D221546940020A41E /* CGVector+Definitions.swift in Sources */,
+				EB1BB22D22147CF60020A41E /* NSDirectionalEdgeInsets+Functions.swift in Sources */,
+				EB1BB19622140E9A0020A41E /* CGSize+Nonmutatings.swift in Sources */,
+				EB1BB2A7221546FB0020A41E /* NSDirectionalEdgeInsets+Definitions.swift in Sources */,
+				EB1BB1A2221453450020A41E /* CGSize+Utils.swift in Sources */,
+				EB1BB1B6221465F40020A41E /* UIEdgeInsets+Mutatings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1762214075B0020A41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BB1E0221474000020A41E /* CGSizeTests.swift in Sources */,
+				EB1BB1DF221474000020A41E /* CGPointTests.swift in Sources */,
+				EB1BB2852215424F0020A41E /* UIEdgeInsetsTests.swift in Sources */,
+				EB1BB2BA22154DC90020A41E /* NSDirectionalEdgeInsetsTests.swift in Sources */,
+				EB1BB281221536D30020A41E /* CGVectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1C1221472A90020A41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BB1E22214740E0020A41E /* CGPoint+Operators.swift in Sources */,
+				EB1BB2992215466A0020A41E /* CGSize+Definitions.swift in Sources */,
+				EB1BB2B52215477F0020A41E /* NSEdgeInsets+Nonmutatings.swift in Sources */,
+				EB1BB2A3221546BA0020A41E /* CGRect+Definitions.swift in Sources */,
+				EB1BB1E52214740E0020A41E /* CGPoint+Utils.swift in Sources */,
+				EB1BB1E92214740E0020A41E /* CGSize+Nonmutatings.swift in Sources */,
+				EB1BB29E221546940020A41E /* CGVector+Definitions.swift in Sources */,
+				EB1BB2712215356E0020A41E /* CGVector+Nonmutatings.swift in Sources */,
+				EB1BB2792215356E0020A41E /* CGVector+Functions.swift in Sources */,
+				EB1BB1EC2214740E0020A41E /* CGRect+Operators.swift in Sources */,
+				EB1BB2B12215477F0020A41E /* NSEdgeInsets+Utils.swift in Sources */,
+				EB1BB2B62215477F0020A41E /* NSEdgeInsets+Operators.swift in Sources */,
+				EB1BB1E62214740E0020A41E /* CGSize+Functions.swift in Sources */,
+				EB1BB1E32214740E0020A41E /* CGPoint+Mutatings.swift in Sources */,
+				EB1BB2752215356E0020A41E /* CGVector+Utils.swift in Sources */,
+				EB1BB1E72214740E0020A41E /* CGSize+Operators.swift in Sources */,
+				EB1BB2B42215477F0020A41E /* NSEdgeInsets+Mutatings.swift in Sources */,
+				EB1BB2B32215477F0020A41E /* NSEdgeInsets+Functions.swift in Sources */,
+				EB1BB2B22215477F0020A41E /* NSEdgeInsets+Definitions.swift in Sources */,
+				EB1BB1E82214740E0020A41E /* CGSize+Mutatings.swift in Sources */,
+				EB1BB1EF2214740E0020A41E /* CGRect+Utils.swift in Sources */,
+				EB1BB1E12214740E0020A41E /* CGPoint+Functions.swift in Sources */,
+				EB1BB1ED2214740E0020A41E /* CGRect+Mutatings.swift in Sources */,
+				EB1BB2942215461A0020A41E /* CGPoint+Definitions.swift in Sources */,
+				EB1BB1EE2214740E0020A41E /* CGRect+Nonmutatings.swift in Sources */,
+				EB1BB1EA2214740E0020A41E /* CGSize+Utils.swift in Sources */,
+				EB1BB26D2215356E0020A41E /* CGVector+Mutatings.swift in Sources */,
+				EB1BB27D2215356E0020A41E /* CGVector+Operators.swift in Sources */,
+				EB1BB1E42214740E0020A41E /* CGPoint+Nonmutatings.swift in Sources */,
+				EB1BB1EB2214740E0020A41E /* CGRect+Functions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1C9221472AA0020A41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BB1DD221473EB0020A41E /* CGPointTests.swift in Sources */,
+				EB1BB2B8221547F20020A41E /* NSEdgeInsetsTests.swift in Sources */,
+				EB1BB1DE221473EB0020A41E /* CGSizeTests.swift in Sources */,
+				EB1BB282221536D30020A41E /* CGVectorTests.swift in Sources */,
+				EB1BB1D3221472AA0020A41E /* CGRectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1F4221479120020A41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BB2A4221546BA0020A41E /* CGRect+Definitions.swift in Sources */,
+				EB1BB210221479410020A41E /* CGPoint+Operators.swift in Sources */,
+				EB1BB224221479410020A41E /* UIEdgeInsets+Nonmutatings.swift in Sources */,
+				EB1BB213221479410020A41E /* CGPoint+Utils.swift in Sources */,
+				EB1BB26E2215356E0020A41E /* CGVector+Mutatings.swift in Sources */,
+				EB1BB217221479410020A41E /* CGSize+Nonmutatings.swift in Sources */,
+				EB1BB22B22147C530020A41E /* NSDirectionalEdgeInsets+Utils.swift in Sources */,
+				EB1BB21A221479410020A41E /* CGRect+Operators.swift in Sources */,
+				EB1BB214221479410020A41E /* CGSize+Functions.swift in Sources */,
+				EB1BB211221479410020A41E /* CGPoint+Mutatings.swift in Sources */,
+				EB1BB222221479410020A41E /* UIEdgeInsets+Operators.swift in Sources */,
+				EB1BB27E2215356E0020A41E /* CGVector+Operators.swift in Sources */,
+				EB1BB21E221479410020A41E /* NSDirectionalEdgeInsets+Operators.swift in Sources */,
+				EB1BB29A2215466A0020A41E /* CGSize+Definitions.swift in Sources */,
+				EB1BB215221479410020A41E /* CGSize+Operators.swift in Sources */,
+				EB1BB21F221479410020A41E /* NSDirectionalEdgeInsets+Mutatings.swift in Sources */,
+				EB1BB216221479410020A41E /* CGSize+Mutatings.swift in Sources */,
+				EB1BB2952215461A0020A41E /* CGPoint+Definitions.swift in Sources */,
+				EB1BB21D221479410020A41E /* CGRect+Utils.swift in Sources */,
+				EB1BB20F221479410020A41E /* CGPoint+Functions.swift in Sources */,
+				EB1BB21B221479410020A41E /* CGRect+Mutatings.swift in Sources */,
+				EB1BB221221479410020A41E /* UIEdgeInsets+Functions.swift in Sources */,
+				EB1BB27A2215356E0020A41E /* CGVector+Functions.swift in Sources */,
+				EB1BB225221479410020A41E /* UIEdgeInsets+Utils.swift in Sources */,
+				EB1BB220221479410020A41E /* NSDirectionalEdgeInsets+Nonmutatings.swift in Sources */,
+				EB1BB2762215356E0020A41E /* CGVector+Utils.swift in Sources */,
+				EB1BB223221479410020A41E /* UIEdgeInsets+Mutatings.swift in Sources */,
+				EB1BB2722215356E0020A41E /* CGVector+Nonmutatings.swift in Sources */,
+				EB1BB290221543CD0020A41E /* UIEdgeInsets+Definitions.swift in Sources */,
+				EB1BB21C221479410020A41E /* CGRect+Nonmutatings.swift in Sources */,
+				EB1BB29F221546940020A41E /* CGVector+Definitions.swift in Sources */,
+				EB1BB22E22147CF60020A41E /* NSDirectionalEdgeInsets+Functions.swift in Sources */,
+				EB1BB218221479410020A41E /* CGSize+Utils.swift in Sources */,
+				EB1BB2A9221546FB0020A41E /* NSDirectionalEdgeInsets+Definitions.swift in Sources */,
+				EB1BB212221479410020A41E /* CGPoint+Nonmutatings.swift in Sources */,
+				EB1BB219221479410020A41E /* CGRect+Functions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB1FC221479120020A41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BB226221479460020A41E /* CGPointTests.swift in Sources */,
+				EB1BB227221479460020A41E /* CGSizeTests.swift in Sources */,
+				EB1BB2872215424F0020A41E /* UIEdgeInsetsTests.swift in Sources */,
+				EB1BB2BC22154DC90020A41E /* NSDirectionalEdgeInsetsTests.swift in Sources */,
+				EB1BB283221536D30020A41E /* CGVectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1BB242221481470020A41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BB2A5221546BA0020A41E /* CGRect+Definitions.swift in Sources */,
+				EB1BB25E2214816D0020A41E /* UIEdgeInsets+Operators.swift in Sources */,
+				EB1BB2662214816D0020A41E /* NSDirectionalEdgeInsets+Utils.swift in Sources */,
+				EB1BB2652214816D0020A41E /* NSDirectionalEdgeInsets+Nonmutatings.swift in Sources */,
+				EB1BB26F2215356E0020A41E /* CGVector+Mutatings.swift in Sources */,
+				EB1BB24F221481670020A41E /* CGPoint+Operators.swift in Sources */,
+				EB1BB252221481670020A41E /* CGPoint+Utils.swift in Sources */,
+				EB1BB256221481670020A41E /* CGSize+Nonmutatings.swift in Sources */,
+				EB1BB2612214816D0020A41E /* UIEdgeInsets+Utils.swift in Sources */,
+				EB1BB259221481670020A41E /* CGRect+Operators.swift in Sources */,
+				EB1BB25D2214816D0020A41E /* UIEdgeInsets+Functions.swift in Sources */,
+				EB1BB27F2215356E0020A41E /* CGVector+Operators.swift in Sources */,
+				EB1BB253221481670020A41E /* CGSize+Functions.swift in Sources */,
+				EB1BB29B2215466A0020A41E /* CGSize+Definitions.swift in Sources */,
+				EB1BB25F2214816D0020A41E /* UIEdgeInsets+Mutatings.swift in Sources */,
+				EB1BB250221481670020A41E /* CGPoint+Mutatings.swift in Sources */,
+				EB1BB2632214816D0020A41E /* NSDirectionalEdgeInsets+Operators.swift in Sources */,
+				EB1BB2962215461A0020A41E /* CGPoint+Definitions.swift in Sources */,
+				EB1BB254221481670020A41E /* CGSize+Operators.swift in Sources */,
+				EB1BB255221481670020A41E /* CGSize+Mutatings.swift in Sources */,
+				EB1BB2622214816D0020A41E /* NSDirectionalEdgeInsets+Functions.swift in Sources */,
+				EB1BB25C221481670020A41E /* CGRect+Utils.swift in Sources */,
+				EB1BB27B2215356E0020A41E /* CGVector+Functions.swift in Sources */,
+				EB1BB24E221481670020A41E /* CGPoint+Functions.swift in Sources */,
+				EB1BB25A221481670020A41E /* CGRect+Mutatings.swift in Sources */,
+				EB1BB2772215356E0020A41E /* CGVector+Utils.swift in Sources */,
+				EB1BB2642214816D0020A41E /* NSDirectionalEdgeInsets+Mutatings.swift in Sources */,
+				EB1BB2732215356E0020A41E /* CGVector+Nonmutatings.swift in Sources */,
+				EB1BB291221543CD0020A41E /* UIEdgeInsets+Definitions.swift in Sources */,
+				EB1BB25B221481670020A41E /* CGRect+Nonmutatings.swift in Sources */,
+				EB1BB2A0221546940020A41E /* CGVector+Definitions.swift in Sources */,
+				EB1BB257221481670020A41E /* CGSize+Utils.swift in Sources */,
+				EB1BB251221481670020A41E /* CGPoint+Nonmutatings.swift in Sources */,
+				EB1BB2AA221546FB0020A41E /* NSDirectionalEdgeInsets+Definitions.swift in Sources */,
+				EB1BB2602214816D0020A41E /* UIEdgeInsets+Nonmutatings.swift in Sources */,
+				EB1BB258221481670020A41E /* CGRect+Functions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB1BB17D2214075B0020A41E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1BB1702214075B0020A41E /* SIMDKit-iOS */;
+			targetProxy = EB1BB17C2214075B0020A41E /* PBXContainerItemProxy */;
+		};
+		EB1BB1D0221472AA0020A41E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1BB1C4221472A90020A41E /* SIMDKit-macOS */;
+			targetProxy = EB1BB1CF221472AA0020A41E /* PBXContainerItemProxy */;
+		};
+		EB1BB203221479120020A41E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1BB1F7221479120020A41E /* SIMDKit-tvOS */;
+			targetProxy = EB1BB202221479120020A41E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EB1BB1832214075B0020A41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LLVM_LTO = YES_THIN;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		EB1BB1842214075B0020A41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LLVM_LTO = YES_THIN;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		EB1BB1862214075B0020A41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					arm64e,
+					armv7s,
+				);
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mntone.SIMDKit;
+				PRODUCT_NAME = SIMDKit;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB1BB1872214075B0020A41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					arm64e,
+					armv7s,
+				);
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mntone.SIMDKit;
+				PRODUCT_NAME = SIMDKit;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB1BB1892214075B0020A41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mntone.UISimdKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB1BB18A2214075B0020A41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mntone.UISimdKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB1BB1D6221472AA0020A41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mntone.SIMDKit;
+				PRODUCT_NAME = SIMDKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		EB1BB1D7221472AA0020A41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mntone.SIMDKit;
+				PRODUCT_NAME = SIMDKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		EB1BB1D8221472AA0020A41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = mntone.SIMDKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		EB1BB1D9221472AA0020A41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = mntone.SIMDKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		EB1BB20A221479120020A41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mntone.SIMDKit;
+				PRODUCT_NAME = SIMDKit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		EB1BB20B221479120020A41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mntone.SIMDKit;
+				PRODUCT_NAME = SIMDKit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		EB1BB20D221479120020A41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mntone.SIMDKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Debug;
+		};
+		EB1BB20E221479120020A41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mntone.SIMDKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Release;
+		};
+		EB1BB24C221481470020A41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mntone.SIMDKit;
+				PRODUCT_NAME = SIMDKit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		EB1BB24D221481470020A41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mntone.SIMDKit;
+				PRODUCT_NAME = SIMDKit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB1BB16B2214075B0020A41E /* Build configuration list for PBXProject "SIMDKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1BB1832214075B0020A41E /* Debug */,
+				EB1BB1842214075B0020A41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1BB1852214075B0020A41E /* Build configuration list for PBXNativeTarget "SIMDKit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1BB1862214075B0020A41E /* Debug */,
+				EB1BB1872214075B0020A41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1BB1882214075B0020A41E /* Build configuration list for PBXNativeTarget "SIMDKitTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1BB1892214075B0020A41E /* Debug */,
+				EB1BB18A2214075B0020A41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1BB1DA221472AA0020A41E /* Build configuration list for PBXNativeTarget "SIMDKit-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1BB1D6221472AA0020A41E /* Debug */,
+				EB1BB1D7221472AA0020A41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1BB1DB221472AA0020A41E /* Build configuration list for PBXNativeTarget "SIMDKitTests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1BB1D8221472AA0020A41E /* Debug */,
+				EB1BB1D9221472AA0020A41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1BB209221479120020A41E /* Build configuration list for PBXNativeTarget "SIMDKit-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1BB20A221479120020A41E /* Debug */,
+				EB1BB20B221479120020A41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1BB20C221479120020A41E /* Build configuration list for PBXNativeTarget "SIMDKitTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1BB20D221479120020A41E /* Debug */,
+				EB1BB20E221479120020A41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1BB24B221481470020A41E /* Build configuration list for PBXNativeTarget "SIMDKit-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1BB24C221481470020A41E /* Debug */,
+				EB1BB24D221481470020A41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB1BB1682214075B0020A41E /* Project object */;
+}
