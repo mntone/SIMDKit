@@ -18,4 +18,8 @@ extension NSDirectionalEdgeInsets {
 	internal var simd: SimdType {
 		return SimdType(x: top.native, y: leading.native, z: bottom.native, w: trailing.native)
 	}
+	
+	public init(vertical: CGFloat, horizontal: CGFloat) {
+		self.init(top: vertical, leading: horizontal, bottom: vertical, trailing: horizontal)
+	}
 }

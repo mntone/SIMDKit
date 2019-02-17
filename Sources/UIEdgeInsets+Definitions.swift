@@ -16,4 +16,8 @@ extension UIEdgeInsets {
 	internal var simd: SimdType {
 		return SimdType(x: top.native, y: left.native, z: bottom.native, w: right.native)
 	}
+	
+	public init(vertical: CGFloat, horizontal: CGFloat) {
+		self.init(top: vertical, left: horizontal, bottom: vertical, right: horizontal)
+	}
 }
