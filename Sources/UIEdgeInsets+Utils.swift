@@ -2,7 +2,7 @@ import struct CoreGraphics.CGFloat
 import struct UIKit.UIEdgeInsets
 
 extension UIEdgeInsets {
-	public var verical: CGFloat {
+	public var vertical: CGFloat {
 		return self.top + self.bottom
 	}
 	

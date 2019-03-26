@@ -2,7 +2,7 @@ import struct AppKit.NSEdgeInsets
 import struct CoreGraphics.CGFloat
 
 extension NSEdgeInsets {
-	public var verical: CGFloat {
+	public var vertical: CGFloat {
 		return self.top + self.bottom
 	}
 	
