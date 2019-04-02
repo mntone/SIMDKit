@@ -45,11 +45,11 @@ extension CGPoint {
 	
 	// C ? V
 	public static func + (lhs: CGFloat, rhs: CGPoint) -> CGPoint {
-		return CGPoint(simd: SimdType(lhs.native) + rhs.simd)
+		return CGPoint(simd: SimdType(repeating: lhs.native) + rhs.simd)
 	}
 	
 	public static func - (lhs: CGFloat, rhs: CGPoint) -> CGPoint {
-		return CGPoint(simd: SimdType(lhs.native) - rhs.simd)
+		return CGPoint(simd: SimdType(repeating: lhs.native) - rhs.simd)
 	}
 	
 	public static func +- (lhs: CGFloat, rhs: CGPoint) -> CGPoint {
@@ -65,16 +65,16 @@ extension CGPoint {
 	}
 	
 	public static func / (lhs: CGFloat, rhs: CGPoint) -> CGPoint {
-		return CGPoint(simd: SimdType(lhs.native) / rhs.simd)
+		return CGPoint(simd: SimdType(repeating: lhs.native) / rhs.simd)
 	}
 	
 	// V ? C
 	public static func + (lhs: CGPoint, rhs: CGFloat) -> CGPoint {
-		return CGPoint(simd: lhs.simd + SimdType(rhs.native))
+		return CGPoint(simd: lhs.simd + SimdType(repeating: rhs.native))
 	}
 	
 	public static func - (lhs: CGPoint, rhs: CGFloat) -> CGPoint {
-		return CGPoint(simd: lhs.simd - SimdType(rhs.native))
+		return CGPoint(simd: lhs.simd - SimdType(repeating: rhs.native))
 	}
 	
 	public static func +- (lhs: CGPoint, rhs: CGFloat) -> CGPoint {
@@ -120,11 +120,11 @@ extension CGPoint {
 	
 	// V ?= C
 	public static func += (lhs: inout CGPoint, rhs: CGFloat) {
-		lhs = CGPoint(simd: lhs.simd + SimdType(rhs.native))
+		lhs = CGPoint(simd: lhs.simd + SimdType(repeating: rhs.native))
 	}
 	
 	public static func -= (lhs: inout CGPoint, rhs: CGFloat) {
-		lhs = CGPoint(simd: lhs.simd - SimdType(rhs.native))
+		lhs = CGPoint(simd: lhs.simd - SimdType(repeating: rhs.native))
 	}
 	
 	public static func +-= (lhs: inout CGPoint, rhs: CGFloat) {

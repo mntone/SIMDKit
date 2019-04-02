@@ -45,11 +45,11 @@ extension CGVector {
 	
 	// C ? V
 	public static func + (lhs: CGFloat, rhs: CGVector) -> CGVector {
-		return CGVector(simd: SimdType(lhs.native) + rhs.simd)
+		return CGVector(simd: SimdType(repeating: lhs.native) + rhs.simd)
 	}
 	
 	public static func - (lhs: CGFloat, rhs: CGVector) -> CGVector {
-		return CGVector(simd: SimdType(lhs.native) - rhs.simd)
+		return CGVector(simd: SimdType(repeating: lhs.native) - rhs.simd)
 	}
 	
 	public static func +- (lhs: CGFloat, rhs: CGVector) -> CGVector {
@@ -65,16 +65,16 @@ extension CGVector {
 	}
 	
 	public static func / (lhs: CGFloat, rhs: CGVector) -> CGVector {
-		return CGVector(simd: SimdType(lhs.native) / rhs.simd)
+		return CGVector(simd: SimdType(repeating: lhs.native) / rhs.simd)
 	}
 	
 	// V ? C
 	public static func + (lhs: CGVector, rhs: CGFloat) -> CGVector {
-		return CGVector(simd: lhs.simd + SimdType(rhs.native))
+		return CGVector(simd: lhs.simd + SimdType(repeating: rhs.native))
 	}
 	
 	public static func - (lhs: CGVector, rhs: CGFloat) -> CGVector {
-		return CGVector(simd: lhs.simd - SimdType(rhs.native))
+		return CGVector(simd: lhs.simd - SimdType(repeating: rhs.native))
 	}
 	
 	public static func +- (lhs: CGVector, rhs: CGFloat) -> CGVector {
@@ -120,11 +120,11 @@ extension CGVector {
 	
 	// V ?= C
 	public static func += (lhs: inout CGVector, rhs: CGFloat) {
-		lhs = CGVector(simd: lhs.simd + SimdType(rhs.native))
+		lhs = CGVector(simd: lhs.simd + SimdType(repeating: rhs.native))
 	}
 	
 	public static func -= (lhs: inout CGVector, rhs: CGFloat) {
-		lhs = CGVector(simd: lhs.simd - SimdType(rhs.native))
+		lhs = CGVector(simd: lhs.simd - SimdType(repeating: rhs.native))
 	}
 	
 	public static func +-= (lhs: inout CGVector, rhs: CGFloat) {

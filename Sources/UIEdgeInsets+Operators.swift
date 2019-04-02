@@ -28,11 +28,11 @@ extension UIEdgeInsets {
 	
 	// C ? V
 	public static func + (lhs: CGFloat, rhs: UIEdgeInsets) -> UIEdgeInsets {
-		return UIEdgeInsets(simd: SimdType(lhs.native) + rhs.simd)
+		return UIEdgeInsets(simd: SimdType(repeating: lhs.native) + rhs.simd)
 	}
 	
 	public static func - (lhs: CGFloat, rhs: UIEdgeInsets) -> UIEdgeInsets {
-		return UIEdgeInsets(simd: SimdType(lhs.native) - rhs.simd)
+		return UIEdgeInsets(simd: SimdType(repeating: lhs.native) - rhs.simd)
 	}
 	
 	public static func * (lhs: CGFloat, rhs: UIEdgeInsets) -> UIEdgeInsets {
@@ -40,16 +40,16 @@ extension UIEdgeInsets {
 	}
 	
 	public static func / (lhs: CGFloat, rhs: UIEdgeInsets) -> UIEdgeInsets {
-		return UIEdgeInsets(simd: SimdType(lhs.native) / rhs.simd)
+		return UIEdgeInsets(simd: SimdType(repeating: lhs.native) / rhs.simd)
 	}
 	
 	// V ? C
 	public static func + (lhs: UIEdgeInsets, rhs: CGFloat) -> UIEdgeInsets {
-		return UIEdgeInsets(simd: lhs.simd + SimdType(rhs.native))
+		return UIEdgeInsets(simd: lhs.simd + SimdType(repeating: rhs.native))
 	}
 	
 	public static func - (lhs: UIEdgeInsets, rhs: CGFloat) -> UIEdgeInsets {
-		return UIEdgeInsets(simd: lhs.simd - SimdType(rhs.native))
+		return UIEdgeInsets(simd: lhs.simd - SimdType(repeating: rhs.native))
 	}
 	
 	public static func * (lhs: UIEdgeInsets, rhs: CGFloat) -> UIEdgeInsets {
@@ -79,11 +79,11 @@ extension UIEdgeInsets {
 	
 	// V ?= C
 	public static func += (lhs: inout UIEdgeInsets, rhs: CGFloat) {
-		lhs = UIEdgeInsets(simd: lhs.simd + SimdType(rhs.native))
+		lhs = UIEdgeInsets(simd: lhs.simd + SimdType(repeating: rhs.native))
 	}
 	
 	public static func -= (lhs: inout UIEdgeInsets, rhs: CGFloat) {
-		lhs = UIEdgeInsets(simd: lhs.simd - SimdType(rhs.native))
+		lhs = UIEdgeInsets(simd: lhs.simd - SimdType(repeating: rhs.native))
 	}
 	
 	public static func *= (lhs: inout UIEdgeInsets, rhs: CGFloat) {

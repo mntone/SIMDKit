@@ -45,11 +45,11 @@ extension CGSize {
 	
 	// C ? V
 	public static func + (lhs: CGFloat, rhs: CGSize) -> CGSize {
-		return CGSize(simd: SimdType(lhs.native) + rhs.simd)
+		return CGSize(simd: SimdType(repeating: lhs.native) + rhs.simd)
 	}
 	
 	public static func - (lhs: CGFloat, rhs: CGSize) -> CGSize {
-		return CGSize(simd: SimdType(lhs.native) - rhs.simd)
+		return CGSize(simd: SimdType(repeating: lhs.native) - rhs.simd)
 	}
 	
 	public static func +- (lhs: CGFloat, rhs: CGSize) -> CGSize {
@@ -65,16 +65,16 @@ extension CGSize {
 	}
 	
 	public static func / (lhs: CGFloat, rhs: CGSize) -> CGSize {
-		return CGSize(simd: SimdType(lhs.native) / rhs.simd)
+		return CGSize(simd: SimdType(repeating: lhs.native) / rhs.simd)
 	}
 	
 	// V ? C
 	public static func + (lhs: CGSize, rhs: CGFloat) -> CGSize {
-		return CGSize(simd: lhs.simd + SimdType(rhs.native))
+		return CGSize(simd: lhs.simd + SimdType(repeating: rhs.native))
 	}
 	
 	public static func - (lhs: CGSize, rhs: CGFloat) -> CGSize {
-		return CGSize(simd: lhs.simd - SimdType(rhs.native))
+		return CGSize(simd: lhs.simd - SimdType(repeating: rhs.native))
 	}
 	
 	public static func +- (lhs: CGSize, rhs: CGFloat) -> CGSize {
@@ -120,11 +120,11 @@ extension CGSize {
 	
 	// V ?= C
 	public static func += (lhs: inout CGSize, rhs: CGFloat) {
-		lhs = CGSize(simd: lhs.simd + SimdType(rhs.native))
+		lhs = CGSize(simd: lhs.simd + SimdType(repeating: rhs.native))
 	}
 	
 	public static func -= (lhs: inout CGSize, rhs: CGFloat) {
-		lhs = CGSize(simd: lhs.simd - SimdType(rhs.native))
+		lhs = CGSize(simd: lhs.simd - SimdType(repeating: rhs.native))
 	}
 	
 	public static func +-= (lhs: inout CGSize, rhs: CGFloat) {

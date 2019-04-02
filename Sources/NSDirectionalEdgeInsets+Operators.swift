@@ -29,11 +29,11 @@ extension NSDirectionalEdgeInsets {
 	
 	// C ? V
 	public static func + (lhs: CGFloat, rhs: NSDirectionalEdgeInsets) -> NSDirectionalEdgeInsets {
-		return NSDirectionalEdgeInsets(simd: SimdType(lhs.native) + rhs.simd)
+		return NSDirectionalEdgeInsets(simd: SimdType(repeating: lhs.native) + rhs.simd)
 	}
 	
 	public static func - (lhs: CGFloat, rhs: NSDirectionalEdgeInsets) -> NSDirectionalEdgeInsets {
-		return NSDirectionalEdgeInsets(simd: SimdType(lhs.native) - rhs.simd)
+		return NSDirectionalEdgeInsets(simd: SimdType(repeating: lhs.native) - rhs.simd)
 	}
 	
 	public static func * (lhs: CGFloat, rhs: NSDirectionalEdgeInsets) -> NSDirectionalEdgeInsets {
@@ -41,16 +41,16 @@ extension NSDirectionalEdgeInsets {
 	}
 	
 	public static func / (lhs: CGFloat, rhs: NSDirectionalEdgeInsets) -> NSDirectionalEdgeInsets {
-		return NSDirectionalEdgeInsets(simd: SimdType(lhs.native) / rhs.simd)
+		return NSDirectionalEdgeInsets(simd: SimdType(repeating: lhs.native) / rhs.simd)
 	}
 	
 	// V ? C
 	public static func + (lhs: NSDirectionalEdgeInsets, rhs: CGFloat) -> NSDirectionalEdgeInsets {
-		return NSDirectionalEdgeInsets(simd: lhs.simd + SimdType(rhs.native))
+		return NSDirectionalEdgeInsets(simd: lhs.simd + SimdType(repeating: rhs.native))
 	}
 	
 	public static func - (lhs: NSDirectionalEdgeInsets, rhs: CGFloat) -> NSDirectionalEdgeInsets {
-		return NSDirectionalEdgeInsets(simd: lhs.simd - SimdType(rhs.native))
+		return NSDirectionalEdgeInsets(simd: lhs.simd - SimdType(repeating: rhs.native))
 	}
 	
 	public static func * (lhs: NSDirectionalEdgeInsets, rhs: CGFloat) -> NSDirectionalEdgeInsets {
@@ -80,11 +80,11 @@ extension NSDirectionalEdgeInsets {
 	
 	// V ?= C
 	public static func += (lhs: inout NSDirectionalEdgeInsets, rhs: CGFloat) {
-		lhs = NSDirectionalEdgeInsets(simd: lhs.simd + SimdType(rhs.native))
+		lhs = NSDirectionalEdgeInsets(simd: lhs.simd + SimdType(repeating: rhs.native))
 	}
 	
 	public static func -= (lhs: inout NSDirectionalEdgeInsets, rhs: CGFloat) {
-		lhs = NSDirectionalEdgeInsets(simd: lhs.simd - SimdType(rhs.native))
+		lhs = NSDirectionalEdgeInsets(simd: lhs.simd - SimdType(repeating: rhs.native))
 	}
 	
 	public static func *= (lhs: inout NSDirectionalEdgeInsets, rhs: CGFloat) {

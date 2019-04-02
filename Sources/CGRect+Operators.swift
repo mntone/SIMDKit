@@ -32,11 +32,11 @@ extension CGRect {
 	
 	// C ? V
 	public static func + (lhs: CGFloat, rhs: CGRect) -> CGRect {
-		return CGRect(simd: SimdType(lhs.native) + rhs.simd)
+		return CGRect(simd: SimdType(repeating: lhs.native) + rhs.simd)
 	}
 	
 	public static func - (lhs: CGFloat, rhs: CGRect) -> CGRect {
-		return CGRect(simd: SimdType(lhs.native) - rhs.simd)
+		return CGRect(simd: SimdType(repeating: lhs.native) - rhs.simd)
 	}
 	
 	public static func * (lhs: CGFloat, rhs: CGRect) -> CGRect {
@@ -44,16 +44,16 @@ extension CGRect {
 	}
 	
 	public static func / (lhs: CGFloat, rhs: CGRect) -> CGRect {
-		return CGRect(simd: SimdType(lhs.native) / rhs.simd)
+		return CGRect(simd: SimdType(repeating: lhs.native) / rhs.simd)
 	}
 	
 	// V ? C
 	public static func + (lhs: CGRect, rhs: CGFloat) -> CGRect {
-		return CGRect(simd: lhs.simd + SimdType(rhs.native))
+		return CGRect(simd: lhs.simd + SimdType(repeating: rhs.native))
 	}
 	
 	public static func - (lhs: CGRect, rhs: CGFloat) -> CGRect {
-		return CGRect(simd: lhs.simd - SimdType(rhs.native))
+		return CGRect(simd: lhs.simd - SimdType(repeating: rhs.native))
 	}
 	
 	public static func * (lhs: CGRect, rhs: CGFloat) -> CGRect {
@@ -83,11 +83,11 @@ extension CGRect {
 	
 	// V ?= C
 	public static func += (lhs: inout CGRect, rhs: CGFloat) {
-		lhs = CGRect(simd: lhs.simd + SimdType(rhs.native))
+		lhs = CGRect(simd: lhs.simd + SimdType(repeating: rhs.native))
 	}
 
 	public static func -= (lhs: inout CGRect, rhs: CGFloat) {
-		lhs = CGRect(simd: lhs.simd - SimdType(rhs.native))
+		lhs = CGRect(simd: lhs.simd - SimdType(repeating: rhs.native))
 	}
 	
 	public static func *= (lhs: inout CGRect, rhs: CGFloat) {
